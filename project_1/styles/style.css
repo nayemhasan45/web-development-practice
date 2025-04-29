@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: "Open Sans", sans-serif;
+}
+.btn{
+    background-color: #FD6E0A;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+}
+footer{
+    background-color: #FFF8F3;
+}
+.container{
+    width: 80%;
+    margin: auto;
+}
+.footer{
+    display: flex;
+    gap: 10%;
+    padding: 50px;
+}
+.left_part{
+    width: 45%;
+}
+.left_part h3,p{
+    margin-bottom: 20px;
+}
+.left_part span{
+    margin-right: 24px;
+}
+.right_part{
+    width: 45%;
+}
+.right_part h3{
+    margin-bottom: 24px;
+}
+.right_part form label{
+    display: block;
+    margin-bottom: 24px;
+    
+}
+.right_part form label input,textarea{
+    border: none;
+    padding: 10px;
+    width: 50%;
+}
