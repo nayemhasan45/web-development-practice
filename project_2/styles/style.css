@@ -70,9 +70,10 @@
     gap: 80px;
 }
 
-.about_me_content{
+.about_me_content {
     margin-top: 140px;
 }
+
 .about_me_content h3 {
     color: var(--Dark-01, #151414);
     font-size: 40px;
@@ -101,4 +102,25 @@
     font-style: normal;
     font-weight: 400;
     line-height: 26px;
+}
+
+/* my plan section  */
+.my_plan {
+    margin-top: 110px;
+}
+
+.my_plan h3 {
+    color: var(--Dark-01, #151414);
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 50px;
+}
+.my_plan_img{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 135px;
+    text-align: center;
 }
