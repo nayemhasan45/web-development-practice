@@ -22,12 +22,19 @@ body {
 }
 
 /* banner section  */
+.header{
+    background: #FFF8F3;
+    margin-bottom: 130px;
+}
 header nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-
+.nav{
+    width: 1200px;
+    margin: auto;
+}
 nav ul {
     display: flex;
     gap: 40px;
@@ -52,7 +59,26 @@ header nav ul li {
 header nav ul li a {
     text-decoration: none;
 }
-
+/* banner section  */
+.banner{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+    background-image: url('../images/header_bg.png'),url('../images/developer.png');
+    background-position: bottom right,top left;
+    background-repeat: no-repeat,no-repeat;
+    background-size: auto,contain;
+}
+.banner_content{
+    margin-left: 55px;
+}
+.banner img{
+    width: 100%;
+}
+.banner_img{
+   
+}
 /* About Me  */
 .new_bg {
     background-color: #FFF8F3;
