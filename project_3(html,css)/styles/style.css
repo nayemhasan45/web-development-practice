@@ -21,6 +21,13 @@ h1 {
     font-weight: 700;
 }
 
+p {
+    color: rgba(14, 14, 14, 0.70);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
 .container {
     width: 80%;
     margin: 0 auto;
@@ -110,12 +117,103 @@ h1 {
     height: 64px;
 }
 
-.pillar_content div{
+.pillar_content div {
     border-radius: 16px;
     border: 1px solid rgba(14, 14, 14, 0.15);
     background: #FFF;
     padding: 24px;
 }
-.pillar_content div h4{
+
+.pillar_content div h4 {
     padding: 24px 0 12px 0;
+}
+
+/* vision section  */
+.vision{
+    margin-bottom: 80px;
+}
+.vision h2 {
+    margin-bottom: 24px;
+}
+
+.vision_card {
+    margin: 32px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 24px;
+}
+
+.vision_card img {
+    width: 64px;
+    height: 64px;
+    padding-bottom: 24px;
+}
+
+.vision_card p {
+    padding: 12px 0px 24px 0px;
+}
+
+#vision_card_1 {
+    border-radius: 16px;
+    border: 0px solid #5490F5;
+    background: rgba(84, 144, 245, 0.20);
+    padding: 32px;
+}
+
+#vision_card_1 button {
+    border-radius: 8px;
+    background: #5490F5;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    padding: 10px 20px;
+}
+
+#vision_card_2 {
+    border-radius: 16px;
+    border: 0px solid #09A15C;
+    background: #C6E4D6;
+    padding: 32px;
+}
+
+#vision_card_2 button {
+    border-radius: 8px;
+    background: #09A15C;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 11px 20px;
+    border: none;
+}
+
+#vision_card_3 {
+    border-radius: 16px;
+    border: 0px solid #FFC239;
+    background: #F7EBCF;
+    padding: 32px;
+}
+
+#vision_card_3 button {
+    border-radius: 8px;
+    background: #FFC239;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px 20px;
+    border: none;
+}
+
+.quate {
+    border-radius: 16px;
+    border: 1px solid rgba(14, 14, 14, 0.15);
+    background: #FFF;
+    padding: 48px 24px;
+    background-image: url('../assets/quote-bg.png');
+    background-repeat: no-repeat;
+    background-position: 26px 24px;
+}
+.quate p{
+    margin-bottom: 12px;
 }
