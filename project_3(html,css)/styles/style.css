@@ -5,20 +5,20 @@
     font-family: "Open Sans", sans-serif;
 }
 
+img {
+    width: 100%;
+}
+
 h2 {
     color: #0E0E0E;
     font-size: 40px;
-    font-style: normal;
     font-weight: 700;
-    line-height: normal;
 }
 
 h1 {
     color: #0E0E0E;
-    font-size: 56px;
-    font-style: normal;
+    font-size: 50px;
     font-weight: 700;
-    line-height: normal;
 }
 
 .container {
@@ -26,6 +26,17 @@ h1 {
     margin: 0 auto;
 }
 
+.btn {
+    padding: 15px 25px;
+    color: #FFF;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    border-radius: 8px;
+    background: #006A50;
+    border: none;
+}
 
 /* navbar style  */
 .nav {
@@ -54,4 +65,26 @@ h1 {
     font-style: normal;
     font-weight: 600;
     line-height: normal;
+}
+
+/* banner section  */
+.banner {
+    border-radius: 24px;
+    background: #C6E4D6;
+    padding: 80px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.banner p {
+    color: rgba(14, 14, 14, 0.50);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.banner h1{
+    padding: 15px 0 25px 0;
 }
