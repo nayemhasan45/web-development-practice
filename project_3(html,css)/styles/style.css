@@ -129,9 +129,10 @@ p {
 }
 
 /* vision section  */
-.vision{
+.vision {
     margin-bottom: 80px;
 }
+
 .vision h2 {
     margin-bottom: 24px;
 }
@@ -214,6 +215,37 @@ p {
     background-repeat: no-repeat;
     background-position: 26px 24px;
 }
-.quate p{
+
+.quate p {
     margin-bottom: 12px;
+}
+
+/* opinion section  */
+.opinion {
+    margin-bottom: 80px;
+}
+
+.opinion table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    border: 1px solid rgba(14, 14, 14, 0.15);
+    background: #C6E4D6;
+    text-align: left;
+    padding: 24px;
+}
+
+td {
+    border: 1px solid rgba(14, 14, 14, 0.15);
+    background: rgba(255, 255, 255, 0.10);
+    padding: 24px;
+}
+
+select {
+    border-radius: 4px;
+    border: 1px solid #0E0E0E;
+    background: #C6E4D6;
+    padding: 10px 15px;
 }
