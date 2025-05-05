@@ -85,6 +85,37 @@ h1 {
     font-weight: 500;
     line-height: normal;
 }
-.banner h1{
+
+.banner h1 {
     padding: 15px 0 25px 0;
+}
+
+/* main section  */
+
+/* pillar part  */
+.pillar {
+    margin: 80px 0px;
+}
+
+.pillar_content {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 24px;
+    margin-top: 32px;
+}
+
+.pillar_content img {
+    width: 64px;
+    height: 64px;
+}
+
+.pillar_content div{
+    border-radius: 16px;
+    border: 1px solid rgba(14, 14, 14, 0.15);
+    background: #FFF;
+    padding: 24px;
+}
+.pillar_content div h4{
+    padding: 24px 0 12px 0;
 }
