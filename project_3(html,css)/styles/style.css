@@ -296,3 +296,44 @@ select {
     font-size: 32px;
     font-weight: 700;
 }
+
+/* donation seciton  */
+.donation {
+    margin: 80px 0px;
+    text-align: center;
+}
+
+.donation h2 {
+    padding-bottom: 24px;
+}
+
+.donation input {
+    width: 1032px;
+    padding: 20px 40px;
+    align-items: center;
+    border-bottom: 1px solid rgba(14, 14, 14, 0.15);
+    background: #FFF;
+    margin-bottom: 32px;
+    border: none;
+}
+
+.donation_card {
+    margin: 32px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 32px;
+}
+
+.donation_card div {
+    border-radius: 16px;
+    border: 1px solid rgba(14, 14, 14, 0.15);
+    background: #FFF;
+    padding: 40px;
+}
+
+.donation_card div h1 {
+    color: rgba(14, 14, 14, 0.80);
+    font-size: 40px;
+    font-weight: 700;
+}
