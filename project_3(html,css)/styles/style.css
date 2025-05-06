@@ -317,6 +317,10 @@ select {
     border: none;
 }
 
+.donation input::placeholder {
+    text-align: center;
+}
+
 .donation_card {
     margin: 32px 0px;
     display: flex;
@@ -336,4 +340,33 @@ select {
     color: rgba(14, 14, 14, 0.80);
     font-size: 40px;
     font-weight: 700;
+}
+
+/* news latter section  */
+.newslatter {
+    text-align: center;
+    padding: 80px 100px;
+    border-radius: 24px;
+    background: #C6E4D6;
+    margin-bottom: 80px;
+}
+.newslatter p{
+    padding-top: 16px;
+}
+.newslatter div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px 0px;
+}
+
+.newslatter div input {
+    width: 600px;
+    padding: 18px 40px;
+    border: none;
+    border-radius: 8px 0px 0px 8px;
+    background: #FFF;
+}
+.newslatter div button{
+    border-radius: 0px 8px 8px 0px;
 }
