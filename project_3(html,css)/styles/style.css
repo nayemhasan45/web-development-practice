@@ -286,7 +286,9 @@ select {
     background: #FFF;
     padding: 48px;
 }
-
+.second{
+    flex-direction: row-reverse;
+}
 .news_card_content div img {
     padding: 12px 0px;
 }
@@ -350,9 +352,11 @@ select {
     background: #C6E4D6;
     margin-bottom: 80px;
 }
-.newslatter p{
+
+.newslatter p {
     padding-top: 16px;
 }
+
 .newslatter div {
     display: flex;
     align-items: center;
@@ -367,6 +371,30 @@ select {
     border-radius: 8px 0px 0px 8px;
     background: #FFF;
 }
-.newslatter div button{
+
+.newslatter div button {
     border-radius: 0px 8px 8px 0px;
+}
+
+/* footer part  */
+footer {
+    background: #FFF;
+    padding: 50px 160px;
+    text-align: center;
+}
+
+footer hr {
+    margin: 32px 0px;
+}
+
+.footer_content div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 23px;
+}
+
+.footer_content div img {
+    width: 26.549px;
+    height: 24px;
 }
