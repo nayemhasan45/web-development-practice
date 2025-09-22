@@ -1,0 +1,400 @@
+/* common style  */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", sans-serif;
+}
+
+body {
+    background-color: #F1F1F3;
+
+}
+
+img {
+    width: 100%;
+}
+
+h2 {
+    color: #0E0E0E;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+h1 {
+    color: #0E0E0E;
+    font-size: 50px;
+    font-weight: 700;
+}
+
+p {
+    color: rgba(14, 14, 14, 0.70);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.btn {
+    padding: 15px 25px;
+    color: #FFF;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    border-radius: 8px;
+    background: #006A50;
+    border: none;
+}
+
+/* navbar style  */
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px 0px;
+    margin-bottom: 20px;
+}
+
+.nav h3 {
+    color: #0E0E0E;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.s_btn {
+    padding: 15px 30px;
+    border-radius: 8px;
+    border: 1px solid #006A50;
+    color: #006A50;
+    background-color: white;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+/* banner section  */
+.banner {
+    border-radius: 24px;
+    background: #C6E4D6;
+    padding: 80px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.banner p {
+    color: rgba(14, 14, 14, 0.50);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.banner h1 {
+    padding: 15px 0 25px 0;
+}
+
+/* main section  */
+
+/* pillar part  */
+.pillar {
+    margin: 80px 0px;
+}
+
+.pillar_content {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 24px;
+    margin-top: 32px;
+}
+
+.pillar_content img {
+    width: 64px;
+    height: 64px;
+}
+
+.pillar_content div {
+    border-radius: 16px;
+    border: 1px solid rgba(14, 14, 14, 0.15);
+    background: #FFF;
+    padding: 24px;
+}
+
+.pillar_content div h4 {
+    padding: 24px 0 12px 0;
+}
+
+/* vision section  */
+.vision {
+    margin-bottom: 80px;
+}
+
+.vision h2 {
+    margin-bottom: 24px;
+}
+
+.vision_card {
+    margin: 32px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 24px;
+}
+
+.vision_card img {
+    width: 64px;
+    height: 64px;
+    padding-bottom: 24px;
+}
+
+.vision_card p {
+    padding: 12px 0px 24px 0px;
+}
+
+#vision_card_1 {
+    border-radius: 16px;
+    border: 0px solid #5490F5;
+    background: rgba(84, 144, 245, 0.20);
+    padding: 32px;
+}
+
+#vision_card_1 button {
+    border-radius: 8px;
+    background: #5490F5;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    padding: 10px 20px;
+}
+
+#vision_card_2 {
+    border-radius: 16px;
+    border: 0px solid #09A15C;
+    background: #C6E4D6;
+    padding: 32px;
+}
+
+#vision_card_2 button {
+    border-radius: 8px;
+    background: #09A15C;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 11px 20px;
+    border: none;
+}
+
+#vision_card_3 {
+    border-radius: 16px;
+    border: 0px solid #FFC239;
+    background: #F7EBCF;
+    padding: 32px;
+}
+
+#vision_card_3 button {
+    border-radius: 8px;
+    background: #FFC239;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px 20px;
+    border: none;
+}
+
+.quate {
+    border-radius: 16px;
+    border: 1px solid rgba(14, 14, 14, 0.15);
+    background: #FFF;
+    padding: 48px 24px;
+    background-image: url('../assets/quote-bg.png');
+    background-repeat: no-repeat;
+    background-position: 26px 24px;
+}
+
+.quate p {
+    margin-bottom: 12px;
+}
+
+/* opinion section  */
+.opinion {
+    margin-bottom: 80px;
+}
+
+.opinion table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    border: 1px solid rgba(14, 14, 14, 0.15);
+    background: #C6E4D6;
+    text-align: left;
+    padding: 24px;
+}
+
+td {
+    border: 1px solid rgba(14, 14, 14, 0.15);
+    background: rgba(255, 255, 255, 0.10);
+    padding: 24px;
+}
+
+select {
+    border-radius: 4px;
+    border: 1px solid #0E0E0E;
+    background: #C6E4D6;
+    padding: 10px 15px;
+}
+
+/* news section  */
+
+.news_title h2 {
+    margin-bottom: 24px;
+}
+
+.news_title p {
+    margin-bottom: 32px;
+}
+
+.news_card {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.news_card_content img {
+    width: 408px;
+    height: 306px;
+    border-radius: 24px;
+}
+
+.news_card_content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+    border-radius: 24px;
+    background: #FFF;
+    padding: 48px;
+}
+.second{
+    flex-direction: row-reverse;
+}
+.news_card_content div img {
+    padding: 12px 0px;
+}
+
+.news_card_content div h3 {
+    color: rgba(14, 14, 14, 0.80);
+    font-size: 32px;
+    font-weight: 700;
+}
+
+/* donation seciton  */
+.donation {
+    margin: 80px 0px;
+    text-align: center;
+}
+
+.donation h2 {
+    padding-bottom: 24px;
+}
+
+.donation input {
+    width: 1032px;
+    padding: 20px 40px;
+    align-items: center;
+    border-bottom: 1px solid rgba(14, 14, 14, 0.15);
+    background: #FFF;
+    margin-bottom: 32px;
+    border: none;
+}
+
+.donation input::placeholder {
+    text-align: center;
+}
+
+.donation_card {
+    margin: 32px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 32px;
+}
+
+.donation_card div {
+    border-radius: 16px;
+    border: 1px solid rgba(14, 14, 14, 0.15);
+    background: #FFF;
+    padding: 40px;
+}
+
+.donation_card div h1 {
+    color: rgba(14, 14, 14, 0.80);
+    font-size: 40px;
+    font-weight: 700;
+}
+
+/* news latter section  */
+.newslatter {
+    text-align: center;
+    padding: 80px 100px;
+    border-radius: 24px;
+    background: #C6E4D6;
+    margin-bottom: 80px;
+}
+
+.newslatter p {
+    padding-top: 16px;
+}
+
+.newslatter div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px 0px;
+}
+
+.newslatter div input {
+    width: 600px;
+    padding: 18px 40px;
+    border: none;
+    border-radius: 8px 0px 0px 8px;
+    background: #FFF;
+}
+
+.newslatter div button {
+    border-radius: 0px 8px 8px 0px;
+}
+
+/* footer part  */
+footer {
+    background: #FFF;
+    padding: 50px 160px;
+    text-align: center;
+}
+
+footer hr {
+    margin: 32px 0px;
+}
+
+.footer_content div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 23px;
+}
+
+.footer_content div img {
+    width: 26.549px;
+    height: 24px;
+}
