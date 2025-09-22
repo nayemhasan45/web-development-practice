@@ -42,7 +42,7 @@
                                 <p id="total-task">6</p>
                             </div>
                         </div>
-                        <div class="task-card bg-blue-600 p-4 rounded-lg col-span-2">
+                        <div id="discover-new" class="task-card bg-blue-600 p-4 rounded-lg col-span-2">
                             <img class="p-4 bg-white rounded-sm" src="assets/board.png" alt="">
                             <div>
                                 <h1 class="text-xl">Discover Something <br> New Today!</h1>
@@ -171,7 +171,7 @@
                             <img src="assets/activity.png" alt="">
                             <span>Activity Log</span>
                         </div>
-                        <button class="btn btn-primary">Clear History</button>
+                        <button id="clear-history" class="btn btn-primary">Clear History</button>
                     </div>
                     <div class="border-t-2 border-indigo-500 border-dashed"></div>
                     <div id="activity-title" class="mt-5">
@@ -203,8 +203,15 @@
                 newActivity.innerText = `You have completed the task:${title} at ${new Date().toLocaleTimeString()}`;
                 activityTitle.appendChild(newActivity);
                 newActivity.classList.add("bg-slate-200","shadow-sm", "mb-3","p-2","rounded");
-            })
-        }
+            });
+        };
+        document.getElementById("clear-history").addEventListener("click",function(){
+            document.getElementById("activity-title").innerHTML="";
+        });
+        document.getElementById("discover-new").addEventListener("click",function(){
+            // alert("Keep Learning New Things");
+            window.location.href="comment.html";
+        })
     </script>
 
     <script src="utilities/utilities.js"></script>
