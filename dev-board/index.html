@@ -24,7 +24,7 @@
                         <img src="assets/checkbox.png" alt="">
                         <span id="all-p">23</span>
                     </div>
-                    <img src="assets/theme-btn.png" alt="">
+                    <img id="theme-btn" src="assets/theme-btn.png" alt="">
                 </div>
             </nav>
         </div>
@@ -52,7 +52,7 @@
                             <img class="p-4 bg-white rounded-sm" src="assets/calender.png" alt="">
                             <div>
                                 <h1 class="text-xl">Wed ,</h1>
-                                <p>Jul 28 2025 </p>
+                                <p id="date-today">Jul 28 2025 </p>
                             </div>
 
                         </div>
@@ -203,6 +203,9 @@
                 newActivity.innerText = `You have completed the task:${title} at ${new Date().toLocaleTimeString()}`;
                 activityTitle.appendChild(newActivity);
                 newActivity.classList.add("bg-slate-200","shadow-sm", "mb-3","p-2","rounded");
+                if(totalTaskNumber===0){
+                    alert("All tasks are completed");
+                }
             });
         };
         document.getElementById("clear-history").addEventListener("click",function(){
@@ -211,7 +214,13 @@
         document.getElementById("discover-new").addEventListener("click",function(){
             // alert("Keep Learning New Things");
             window.location.href="comment.html";
-        })
+        });
+        document.getElementById("theme-btn").addEventListener("click", function () {
+            // Generate a random hex color
+            const randomColor = "#" + Math.floor(Math.random() * 16777215).toString(16).padStart(6, "0");
+            document.body.style.backgroundColor = randomColor;
+        });
+        document.getElementById("date-today").innerText = new Date().toDateString();
     </script>
 
     <script src="utilities/utilities.js"></script>
