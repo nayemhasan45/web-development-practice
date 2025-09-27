@@ -4,15 +4,15 @@ function getData() {
     .then((res) => res.json())
     .then((data) => loadData(data.categories));
 }
-function removeActiveClass(){
-  const getClasses =document.getElementsByClassName('active');
+function removeActiveClass() {
+  const getClasses = document.getElementsByClassName("active");
   // console.log(getClasses);
-  for(const btn of getClasses){
+  for (const btn of getClasses) {
     // console.log(btn);
     btn.classList.remove("active");
   }
 }
-function handleAllBtn(){
+function handleAllBtn() {
   removeActiveClass();
   document.getElementById("static-btn").classList.add("active");
   getAllVideos();
@@ -22,18 +22,18 @@ const loadData = (allData) => {
   allData.map((data) => {
     const createBtn = document.createElement("button");
     createBtn.innerText = data.category;
-    createBtn.onclick =()=>{
+    createBtn.onclick = () => {
       removeActiveClass();
       createBtn.classList.add("active");
       loadCategory(data.category_id);
-    }
+    };
     createBtn.classList.add(
       "btn",
       "bg-[#17171710]",
       "text-[#171717]",
       "hover:bg-[#FF1F3D]",
       "hover:text-white",
-      "btn-sm",
+      "btn-sm"
     );
     getAllBtn.appendChild(createBtn);
   });
@@ -50,12 +50,13 @@ function getAllVideos() {
 
 const loadVideos = (allVideos) => {
   const getVideoContainer = document.getElementById("video-container");
-  getVideoContainer.innerHTML="";
-  if(allVideos!=''){
+  getVideoContainer.innerHTML = "";
+  if (allVideos != "") {
     allVideos.forEach((video) => {
-    const createDiv = document.createElement("div");
-    // createDiv.classList.add('card');
-    createDiv.innerHTML = `
+      const createDiv = document.createElement("div");
+      // createDiv.classList.add('card');
+      // console.log(video.video_id);
+      createDiv.innerHTML = `
       <figure>
         <img class="rounded-lg w-80 h-48 object-cover"
              src="${video.thumbnail}" />
@@ -126,15 +127,29 @@ const loadVideos = (allVideos) => {
             ${video.others.views}
           </p>
         </div>
-      </div>
+        </div>
+        <div>
+            <button onclick="openModal('${
+              video.video_id
+            }')" class="btn btn-block">see details</button>
+        </div>
     `;
 
-    getVideoContainer.appendChild(createDiv);
-  });
-  }else{
-    const createDiv = document.createElement('div');
-    createDiv.classList.add("col-span-4", "flex","justify-center","items-center","text-center", "gap-5", "flex-col","py-10")
-    createDiv.innerHTML=`
+      getVideoContainer.appendChild(createDiv);
+    });
+  } else {
+    const createDiv = document.createElement("div");
+    createDiv.classList.add(
+      "col-span-4",
+      "flex",
+      "justify-center",
+      "items-center",
+      "text-center",
+      "gap-5",
+      "flex-col",
+      "py-10"
+    );
+    createDiv.innerHTML = `
         <img class="w-32" src="assets/Icon.png" alt="">
         <p class="text-4xl font-bold">Oops!! Sorry, There is no <br>content here</p>
     `;
@@ -142,10 +157,38 @@ const loadVideos = (allVideos) => {
   }
 };
 // get category by id
-const loadCategory=(id)=>{
-    const url=`https://openapi.programming-hero.com/api/phero-tube/category/${id}`;
-    fetch(url)
-    .then(res=>res.json())
-    .then(data=>loadVideos(data.category));
-    // console.log(data);
-}
+const loadCategory = (id) => {
+  const url = `https://openapi.programming-hero.com/api/phero-tube/category/${id}`;
+  fetch(url)
+    .then((res) => res.json())
+    .then((data) => loadVideos(data.category));
+  // console.log(data);
+};
+
+// open modal
+const openModal = (id) => {
+  console.log(id);
+  const url = `https://openapi.programming-hero.com/api/phero-tube/video/${id}`;
+  fetch(url)
+    .then((res) => res.json())
+    .then((data) => showModalNew(data.video));
+};
+const showModalNew = (data) => {
+  console.log(data);
+  document.getElementById("get_modal").showModal();
+  const getModalDiv = document.getElementById("modal_container");
+  getModalDiv.innerHTML = `
+    <div class="card bg-base-100 image-full shadow-sm">
+  <figure>
+    <img class=" w-full"
+      src="${data.thumbnail}"
+      alt="Shoes" />
+  </figure>
+  <div class="card-body">
+    <h2 class="card-title">${data.title}</h2>
+    <p>${data.description}</p>
+    
+  </div>
+</div>
+  `;
+};
