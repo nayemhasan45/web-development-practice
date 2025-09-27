@@ -8,6 +8,12 @@
     <!-- daisy ui -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+        .active{
+            color: white;
+            background-color:#FF1F3D;
+        }
+    </style>
 </head>
 
 <body>
@@ -29,7 +35,7 @@
         <section class="main-container">
             <!-- dynamic btn created here -->
             <div id="all-btn" class="flex justify-center gap-5 items-center mb-5">
-                <button onclick="getAllVideos()" class="btn btn-sm text-white bg-[#FF1F3D]">All</button>
+                <button id="static-btn" onclick="handleAllBtn()" class="btn btn-sm ">All</button>
             </div>
             <!-- dynamic btn ends here -->
 

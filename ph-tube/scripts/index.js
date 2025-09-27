@@ -4,21 +4,36 @@ function getData() {
     .then((res) => res.json())
     .then((data) => loadData(data.categories));
 }
-
+function removeActiveClass(){
+  const getClasses =document.getElementsByClassName('active');
+  // console.log(getClasses);
+  for(const btn of getClasses){
+    // console.log(btn);
+    btn.classList.remove("active");
+  }
+}
+function handleAllBtn(){
+  removeActiveClass();
+  document.getElementById("static-btn").classList.add("active");
+  getAllVideos();
+}
 const loadData = (allData) => {
   const getAllBtn = document.getElementById("all-btn");
   allData.map((data) => {
-    console.log(data)
     const createBtn = document.createElement("button");
     createBtn.innerText = data.category;
-    createBtn.onclick =()=>loadCategory(data.category_id);
+    createBtn.onclick =()=>{
+      removeActiveClass();
+      createBtn.classList.add("active");
+      loadCategory(data.category_id);
+    }
     createBtn.classList.add(
       "btn",
       "bg-[#17171710]",
       "text-[#171717]",
       "hover:bg-[#FF1F3D]",
       "hover:text-white",
-      "btn-sm"
+      "btn-sm",
     );
     getAllBtn.appendChild(createBtn);
   });
@@ -36,7 +51,8 @@ function getAllVideos() {
 const loadVideos = (allVideos) => {
   const getVideoContainer = document.getElementById("video-container");
   getVideoContainer.innerHTML="";
-  allVideos.forEach((video) => {
+  if(allVideos!=''){
+    allVideos.forEach((video) => {
     const createDiv = document.createElement("div");
     // createDiv.classList.add('card');
     createDiv.innerHTML = `
@@ -115,6 +131,15 @@ const loadVideos = (allVideos) => {
 
     getVideoContainer.appendChild(createDiv);
   });
+  }else{
+    const createDiv = document.createElement('div');
+    createDiv.classList.add("col-span-4", "flex","justify-center","items-center","text-center", "gap-5", "flex-col","py-10")
+    createDiv.innerHTML=`
+        <img class="w-32" src="assets/Icon.png" alt="">
+        <p class="text-4xl font-bold">Oops!! Sorry, There is no <br>content here</p>
+    `;
+    getVideoContainer.appendChild(createDiv);
+  }
 };
 // get category by id
 const loadCategory=(id)=>{
@@ -122,4 +147,5 @@ const loadCategory=(id)=>{
     fetch(url)
     .then(res=>res.json())
     .then(data=>loadVideos(data.category));
+    // console.log(data);
 }
