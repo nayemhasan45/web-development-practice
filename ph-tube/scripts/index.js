@@ -1,62 +1,69 @@
 // get categories data and load dynamic button
 function getData() {
-  fetch("https://openapi.programming-hero.com/api/phero-tube/categories")
-    .then((res) => res.json())
-    .then((data) => loadData(data.categories));
+    fetch("https://openapi.programming-hero.com/api/phero-tube/categories")
+        .then((res) => res.json())
+        .then((data) => loadData(data.categories));
 }
+
 function removeActiveClass() {
-  const getClasses = document.getElementsByClassName("active");
-  // console.log(getClasses);
-  for (const btn of getClasses) {
-    // console.log(btn);
-    btn.classList.remove("active");
-  }
+    const getClasses = document.getElementsByClassName("active");
+    // console.log(getClasses);
+    for (const btn of getClasses) {
+        // console.log(btn);
+        btn.classList.remove("active");
+    }
 }
+
 function handleAllBtn() {
-  removeActiveClass();
-  document.getElementById("static-btn").classList.add("active");
-  getAllVideos();
+    removeActiveClass();
+    document.getElementById("static-btn").classList.add("active");
+    getAllVideos();
 }
 const loadData = (allData) => {
-  const getAllBtn = document.getElementById("all-btn");
-  allData.map((data) => {
-    const createBtn = document.createElement("button");
-    createBtn.innerText = data.category;
-    createBtn.onclick = () => {
-      removeActiveClass();
-      createBtn.classList.add("active");
-      loadCategory(data.category_id);
-    };
-    createBtn.classList.add(
-      "btn",
-      "bg-[#17171710]",
-      "text-[#171717]",
-      "hover:bg-[#FF1F3D]",
-      "hover:text-white",
-      "btn-sm"
-    );
-    getAllBtn.appendChild(createBtn);
-  });
+    const getAllBtn = document.getElementById("all-btn");
+    allData.map((data) => {
+        const createBtn = document.createElement("button");
+        createBtn.innerText = data.category;
+        createBtn.onclick = () => {
+            removeActiveClass();
+            createBtn.classList.add("active");
+            loadCategory(data.category_id);
+        };
+        createBtn.classList.add(
+            "btn",
+            "bg-[#17171710]",
+            "text-[#171717]",
+            "hover:bg-[#FF1F3D]",
+            "hover:text-white",
+            "btn-sm"
+        );
+        getAllBtn.appendChild(createBtn);
+    });
 };
 
 getData();
+// search input 
+document.getElementById('getText').addEventListener("keyup", (e) => {
+    const title = e.target.value;
+    getAllVideos(title);
+})
 
 // get all videos and load dynamic video
-function getAllVideos() {
-  fetch("https://openapi.programming-hero.com/api/phero-tube/videos")
-    .then((res) => res.json())
-    .then((data) => loadVideos(data.videos));
+function getAllVideos(title = "") {
+    fetch(`https://openapi.programming-hero.com/api/phero-tube/videos?title=${title}`)
+        .then((res) => res.json())
+        .then((data) => loadVideos(data.videos));
 }
 
 const loadVideos = (allVideos) => {
-  const getVideoContainer = document.getElementById("video-container");
-  getVideoContainer.innerHTML = "";
-  if (allVideos != "") {
-    allVideos.forEach((video) => {
-      const createDiv = document.createElement("div");
-      // createDiv.classList.add('card');
-      // console.log(video.video_id);
-      createDiv.innerHTML = `
+        const getVideoContainer = document.getElementById("video-container");
+        getVideoContainer.innerHTML = "";
+        if (allVideos != "") {
+            allVideos.forEach((video) => {
+                        const createDiv = document.createElement("div");
+                        // createDiv.classList.add('card');
+                        // console.log(video.video_id);
+                        createDiv.innerHTML = `
       <figure>
         <img class="rounded-lg w-80 h-48 object-cover"
              src="${video.thumbnail}" />
