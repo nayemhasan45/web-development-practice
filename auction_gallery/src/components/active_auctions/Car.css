@@ -1,0 +1,7 @@
+.all_car img{
+    width: 50%;
+}
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}

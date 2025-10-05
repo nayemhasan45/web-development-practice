@@ -1,0 +1,94 @@
+{
+  "items": [
+    {
+      "id": 1,
+      "title": "Aston Martin One-77",
+      "description": "A rare masterpiece — hand-built 7.3L V12, carbon fiber body, 750 horsepower. Only 77 units ever made.",
+      "currentBidPrice": 1450000,
+      "timeLeft": "2d 6h",
+      "bidsCount": 23,
+      "image": "https://i.ibb.co/zW0J8N1T/aston-martin.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Bugatti Veyron Grand Sport Vitesse",
+      "description": "8.0L quad-turbo W16 engine, top speed over 400 km/h, iconic black & white finish.",
+      "currentBidPrice": 1950000,
+      "timeLeft": "4d 12h",
+      "bidsCount": 41,
+      "image": "https://i.ibb.co/tTNZL5ct/bugatti.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Ferrari LaFerrari",
+      "description": "Hybrid supercar combining a V12 engine and electric motor. Signature red with butterfly doors.",
+      "currentBidPrice": 1680000,
+      "timeLeft": "1d 18h",
+      "bidsCount": 37,
+      "image": "https://i.ibb.co/jZDBjg37/ferrari.jpg"
+    },
+    {
+      "id": 4,
+      "title": "Ferrari F60 America",
+      "description": "Limited-edition convertible built to celebrate 60 years of Ferrari in North America.",
+      "currentBidPrice": 2800000,
+      "timeLeft": "3d 10h",
+      "bidsCount": 29,
+      "image": "https://i.ibb.co/pvyMtRDZ/ferrari-f60.jpg"
+    },
+    {
+      "id": 5,
+      "title": "Koenigsegg Agera RS",
+      "description": "5.0L twin-turbo V8 engine producing 1160 hp, record-breaking Swedish hypercar.",
+      "currentBidPrice": 2300000,
+      "timeLeft": "5d 0h",
+      "bidsCount": 18,
+      "image": "https://i.ibb.co/BVqjLpKf/koenigsegg.jpg"
+    },
+    {
+      "id": 6,
+      "title": "Koenigsegg CCXR Trevita",
+      "description": "Carbon fiber diamond weave body, limited to only two units, 4.8L twin-turbo V8.",
+      "currentBidPrice": 3300000,
+      "timeLeft": "12h 45m",
+      "bidsCount": 52,
+      "image": "https://i.ibb.co/GQBB436j/koenigsegg-trevita.jpg"
+    },
+    {
+      "id": 7,
+      "title": "Lamborghini Veneno",
+      "description": "Built for Lamborghini’s 50th anniversary, features 6.5L V12 engine and radical aero design.",
+      "currentBidPrice": 4100000,
+      "timeLeft": "2d 8h",
+      "bidsCount": 61,
+      "image": "https://i.ibb.co/hJShbfSk/lamborghini.jpg"
+    },
+    {
+      "id": 8,
+      "title": "Lykan Hypersport",
+      "description": "Middle East’s first hypercar — diamond-encrusted headlights, 3.7L twin-turbo engine, 780 hp.",
+      "currentBidPrice": 3400000,
+      "timeLeft": "16h 30m",
+      "bidsCount": 46,
+      "image": "https://i.ibb.co/nNkp6QMx/lykan-hypersport.jpg"
+    },
+    {
+      "id": 9,
+      "title": "Pagani Huayra",
+      "description": "Italian artistry meets AMG power — carbon-titanium monocoque and butterfly doors.",
+      "currentBidPrice": 2500000,
+      "timeLeft": "9h 55m",
+      "bidsCount": 39,
+      "image": "https://i.ibb.co/SwvbRGMJ/pagani-huayra.jpg"
+    },
+    {
+      "id": 10,
+      "title": "Zenvo ST1",
+      "description": "Danish hypercar with a 6.8L V8 engine producing 1100 horsepower. Handcrafted excellence.",
+      "currentBidPrice": 1800000,
+      "timeLeft": "6d 4h",
+      "bidsCount": 22,
+      "image": "https://i.ibb.co/4Rs4fLph/zenvo.jpg"
+    }
+  ]
+}
