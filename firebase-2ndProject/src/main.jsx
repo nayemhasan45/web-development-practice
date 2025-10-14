@@ -8,20 +8,23 @@ import Root from './components/Root.jsx';
 import Home from './components/Home.jsx';
 import SignIn from './components/SignIn.jsx';
 import SignUp from './components/SignUp.jsx';
+import FirebaseAuthProvider from './components/contexts/FirebaseAuthProvider.jsx';
 const router = createBrowserRouter([
   {
-    path:"/",
-    Component:Root,
-    children:[
-      {index:true,Component:Home},
-      {path:"signIn",Component:SignIn},
-      {path:"signUp",Component:SignUp}
+    path: "/",
+    Component: Root,
+    children: [
+      { index: true, Component: Home },
+      { path: "signIn", Component: SignIn },
+      { path: "signUp", Component: SignUp }
     ]
   }
 ])
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <RouterProvider router={router}></RouterProvider>
+    <FirebaseAuthProvider>
+      <RouterProvider router={router}></RouterProvider>
+    </FirebaseAuthProvider>
   </StrictMode>,
 )
