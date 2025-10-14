@@ -15,7 +15,7 @@ const SignIn = () => {
         // log in with context 
         signInUser(email, password)
             .then(res => {
-                // console.log(res);
+                console.log(res);
             })
             .catch(err => {
                 console.log(err);

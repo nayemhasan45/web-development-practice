@@ -5,14 +5,21 @@ import { AuthContext } from './contexts/AuthContext';
 
 const Header = () => {
     // get current user 
-    const {user}=use(AuthContext);
-    // console.log(user.email);
+    const { user, signOutUser } = use(AuthContext);
+
+    // handling user sign out 
+    const handleSignOut = () => {
+        signOutUser();
+    }
 
     // setting up the links for showing dynamically 
     const link = <>
         <li><NavLink to={"/"}>Home</NavLink></li>
         <li><NavLink to={"/signIn"}>Sign In</NavLink></li>
         <li><NavLink to={"/signUp"}>Sign Up</NavLink></li>
+        {
+            user && <li><NavLink to={"/profile"}>Profile</NavLink></li>
+        }
     </>
     return (
         <div className="navbar bg-base-100 shadow-sm">
@@ -35,8 +42,15 @@ const Header = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                {user? <p>{user.email}</p>:<></>}
-                {user?<a className="btn">Sign Out</a>:<Link className='btn' to={'/signIp'}>Sign In</Link>}
+                {
+                    user ?
+                        <>
+                            <span>{user.email}</span>
+                            <a onClick={handleSignOut} className="btn">Sign Out</a>
+                        </>
+                        : <Link className='btn' to={'/signIn'}>Sign In</Link>
+
+                }
             </div>
         </div>
     );

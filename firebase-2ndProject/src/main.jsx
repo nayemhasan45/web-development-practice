@@ -9,6 +9,8 @@ import Home from './components/Home.jsx';
 import SignIn from './components/SignIn.jsx';
 import SignUp from './components/SignUp.jsx';
 import FirebaseAuthProvider from './components/contexts/FirebaseAuthProvider.jsx';
+import Profile from './components/Profile.jsx';
+import PrivateRoutes from './components/routes/PrivateRoutes.jsx';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -16,7 +18,10 @@ const router = createBrowserRouter([
     children: [
       { index: true, Component: Home },
       { path: "signIn", Component: SignIn },
-      { path: "signUp", Component: SignUp }
+      { path: "signUp", Component: SignUp },
+      {
+        path:"profile",element:<PrivateRoutes><Profile></Profile></PrivateRoutes>
+      }
     ]
   }
 ])
