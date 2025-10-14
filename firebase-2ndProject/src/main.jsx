@@ -11,6 +11,7 @@ import SignUp from './components/SignUp.jsx';
 import FirebaseAuthProvider from './components/contexts/FirebaseAuthProvider.jsx';
 import Profile from './components/Profile.jsx';
 import PrivateRoutes from './components/routes/PrivateRoutes.jsx';
+import DashBoard from './components/DashBoard.jsx';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -21,6 +22,9 @@ const router = createBrowserRouter([
       { path: "signUp", Component: SignUp },
       {
         path:"profile",element:<PrivateRoutes><Profile></Profile></PrivateRoutes>
+      },
+      {
+        path:"dashBoard",element:<PrivateRoutes><DashBoard></DashBoard></PrivateRoutes>
       }
     ]
   }

@@ -1,10 +1,16 @@
 import React, { use } from 'react';
-import { Link } from 'react-router';
+import { Link, useLocation, useNavigate } from 'react-router';
 import { AuthContext } from './contexts/AuthContext';
 
 const SignIn = () => {
     // using the context 
     const { signInUser } = use(AuthContext);
+
+    const location = useLocation();
+    console.log(location);
+
+    // use navigate hook to redirect after log in successful 
+    const navigate = useNavigate();
 
     // event handler on form submit 
     const handleSignIn = (e) => {
@@ -16,6 +22,7 @@ const SignIn = () => {
         signInUser(email, password)
             .then(res => {
                 console.log(res);
+                navigate(location?.state || '/')
             })
             .catch(err => {
                 console.log(err);
