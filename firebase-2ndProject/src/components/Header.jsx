@@ -1,8 +1,14 @@
-import React from 'react';
-import { NavLink } from 'react-router';
+import React, { use } from 'react';
+import { Link, NavLink } from 'react-router';
 import './Header.css';
+import { AuthContext } from './contexts/AuthContext';
 
 const Header = () => {
+    // get current user 
+    const {user}=use(AuthContext);
+    // console.log(user.email);
+
+    // setting up the links for showing dynamically 
     const link = <>
         <li><NavLink to={"/"}>Home</NavLink></li>
         <li><NavLink to={"/signIn"}>Sign In</NavLink></li>
@@ -29,7 +35,8 @@ const Header = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                <a className="btn">Button</a>
+                {user? <p>{user.email}</p>:<></>}
+                {user?<a className="btn">Sign Out</a>:<Link className='btn' to={'/signIp'}>Sign In</Link>}
             </div>
         </div>
     );

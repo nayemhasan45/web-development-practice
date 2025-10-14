@@ -4,24 +4,28 @@ import { AuthContext } from './contexts/AuthContext';
 
 const SignIn = () => {
     // using the context 
-    const {signInUser}=use(AuthContext);
+    const { signInUser } = use(AuthContext);
 
     // event handler on form submit 
-    const handleSignIn=(e)=>{
+    const handleSignIn = (e) => {
         e.preventDefault();
-        const email=e.target.email.value;
-        const password= e.target.password.value;
-        
+        const email = e.target.email.value;
+        const password = e.target.password.value;
+
         // log in with context 
-        signInUser(email,password)
-        .then(res=>{
-            console.log(res);
-        })
-        .catch(err=>{
-            console.log(err);
-        })
+        signInUser(email, password)
+            .then(res => {
+                // console.log(res);
+            })
+            .catch(err => {
+                console.log(err);
+            })
+
+        // clearing the input fields 
+
+        e.target.reset();
     }
-    
+
     return (
         <div className="card bg-base-100 w-full mx-auto mt-10 max-w-sm shrink-0 shadow-2xl">
             <h1 className="text-3xl text-center p-5 font-bold">Login now!</h1>

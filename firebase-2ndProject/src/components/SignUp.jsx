@@ -20,6 +20,8 @@ const SignUp = () => {
         .catch(err=>{
             console.log(err)
         })
+        // clearing the input fields 
+        e.target.reset();
         
     }
     return (
