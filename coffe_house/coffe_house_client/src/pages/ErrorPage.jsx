@@ -1,16 +1,15 @@
 import React from 'react';
-import { Outlet } from 'react-router';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 
-const HomeLayout = () => {
+const ErrorPage = () => {
     return (
         <div>
             <Header></Header>
-            <Outlet></Outlet>
+            <h1>this is error page </h1>
             <Footer></Footer>
         </div>
     );
 };
 
-export default HomeLayout;
+export default ErrorPage;

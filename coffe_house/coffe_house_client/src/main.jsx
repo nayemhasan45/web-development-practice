@@ -4,11 +4,35 @@ import "./index.css";
 import { createBrowserRouter } from "react-router";
 import { RouterProvider } from "react-router/dom";
 import HomeLayout from "./layouts/HomeLayout.jsx";
+import Home from "./pages/Home.jsx";
+import AddCoffe from "./pages/AddCoffe.jsx";
+import UpdateCoffe from "./pages/UpdateCoffe.jsx";
+import CoffeDeatils from "./pages/CoffeDeatils.jsx";
+import ErrorPage from "./pages/ErrorPage.jsx";
 
 const router = createBrowserRouter([
   {
     path: "/",
     Component:HomeLayout,
+    errorElement:<ErrorPage></ErrorPage>,
+    children:[
+      {
+        index:true,
+        Component:Home,
+      },
+      {
+        path:"/add-coffe",
+        Component:AddCoffe,
+      },
+      {
+        path:"/update-coffe",
+        Component: UpdateCoffe,
+      },
+      {
+        path:"/coffe-details",
+        Component:CoffeDeatils,
+      }
+    ]
   },
 ]);
 
