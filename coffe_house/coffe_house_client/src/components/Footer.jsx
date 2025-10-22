@@ -23,9 +23,9 @@ const Footer = () => {
   return (
     <div style={{ backgroundImage: `url(${bg})` }}>
       <div className="py-12 md:py-16 lg:py-20">
-        <div className="w-11/12 mx-auto max-w-7xl">
+        <div className="w-11/12 mx-auto ">
           {/* Main content container */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20">
+          <div className="grid grid-cols-1 lg:grid-cols-2  gap-12 lg:gap-20 ">
             {/* Left Section */}
             <div className="space-y-8">
               {/* Logo and Title */}
