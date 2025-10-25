@@ -4,7 +4,7 @@ import bgB from "../assets/images/more/5.png";
 import { Link } from "react-router";
 import CoffeeCard from "./CoffeeCard";
 
-const AddCoffeeCom = ({ coffees }) => {
+const AddCoffeeCom = ({ coffees,handleDeleteParent }) => {
   return (
     <div
       className="relative bg-cover bg-no-repeat my-16 md:my-24"
@@ -35,7 +35,7 @@ const AddCoffeeCom = ({ coffees }) => {
         {/* Coffee cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-10 mt-2 md:mt-10 relative z-10">
           {coffees.map((coffee) => (
-            <CoffeeCard key={coffee._id} coffee={coffee}></CoffeeCard>
+            <CoffeeCard key={coffee._id} handleDeleteParent={handleDeleteParent} coffee={coffee}></CoffeeCard>
           ))}
         </div>
       </div>

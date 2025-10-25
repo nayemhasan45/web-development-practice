@@ -1,0 +1,162 @@
+[
+  {
+    "recipe_id": 1,
+    "recipe_name": "Chicken Biryani",
+    "recipe_image": "https://images.unsplash.com/photo-1631515243349-e0cb75fb8d3a?w=400&h=300&fit=crop&q=80",
+    "short_description": "Aromatic basmati rice cooked with tender chicken pieces and fragrant spices",
+    "ingredients": [
+      "500 g basmati rice",
+      "800 g chicken pieces",
+      "200 ml yogurt",
+      "50 g ginger-garlic paste",
+      "100 g fried onions",
+      "2 tsp biryani masala",
+      "1 tsp turmeric powder",
+      "4-5 green chilies",
+      "Fresh mint leaves",
+      "Saffron strands"
+    ],
+    "preparing_time": "45 min",
+    "calories": "520 calories"
+  },
+  {
+    "recipe_id": 2,
+    "recipe_name": "Beef Curry",
+    "recipe_image": "https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=400&h=300&fit=crop&q=80",
+    "short_description": "Rich and flavorful beef curry with aromatic spices and coconut milk",
+    "ingredients": [
+      "600 g beef cubes",
+      "300 ml coconut milk",
+      "100 g onion paste",
+      "50 g tomato puree",
+      "2 tsp curry powder",
+      "1 tsp cumin powder",
+      "1 tsp coriander powder",
+      "3-4 curry leaves",
+      "2 tbsp cooking oil",
+      "Salt to taste"
+    ],
+    "preparing_time": "60 min",
+    "calories": "450 calories"
+  },
+  {
+    "recipe_id": 3,
+    "recipe_name": "Fish Curry",
+    "recipe_image": "https://images.unsplash.com/photo-1559847844-5315695dadae?w=400&h=300&fit=crop&q=80",
+    "short_description": "Traditional fish curry with tangy tamarind and aromatic spices",
+    "ingredients": [
+      "500 g fish fillets",
+      "200 ml tamarind water",
+      "100 g onion slices",
+      "50 g tomato pieces",
+      "2 tsp red chili powder",
+      "1 tsp turmeric powder",
+      "1 tsp mustard seeds",
+      "Fresh curry leaves",
+      "2 tbsp coconut oil",
+      "Salt to taste"
+    ],
+    "preparing_time": "30 min",
+    "calories": "320 calories"
+  },
+  {
+    "recipe_id": 4,
+    "recipe_name": "Vegetable Stir Fry",
+    "recipe_image": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=400&h=300&fit=crop&q=80",
+    "short_description": "Fresh mixed vegetables stir-fried with garlic and soy sauce",
+    "ingredients": [
+      "300 g mixed vegetables",
+      "2 tbsp soy sauce",
+      "1 tbsp oyster sauce",
+      "3 cloves garlic",
+      "1 inch ginger",
+      "2 tbsp vegetable oil",
+      "1 tsp sesame oil",
+      "Spring onions",
+      "Salt and pepper",
+      "Red chili flakes"
+    ],
+    "preparing_time": "20 min",
+    "calories": "180 calories"
+  },
+  {
+    "recipe_id": 5,
+    "recipe_name": "Lamb Korma",
+    "recipe_image": "https://images.unsplash.com/photo-1603133872878-684f208fb84b?w=400&h=300&fit=crop&q=80",
+    "short_description": "Creamy and mild lamb korma with cashew nuts and aromatic spices",
+    "ingredients": [
+      "700 g lamb pieces",
+      "200 ml heavy cream",
+      "100 g cashew nuts",
+      "50 g onion paste",
+      "2 tsp garam masala",
+      "1 tsp cardamom powder",
+      "1 tsp cinnamon",
+      "Bay leaves",
+      "2 tbsp ghee",
+      "Salt to taste"
+    ],
+    "preparing_time": "75 min",
+    "calories": "580 calories"
+  },
+  {
+    "recipe_id": 6,
+    "recipe_name": "Dal Tadka",
+    "recipe_image": "https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=400&h=300&fit=crop&q=80",
+    "short_description": "Classic lentil curry with aromatic tempering and fresh herbs",
+    "ingredients": [
+      "200 g yellow lentils",
+      "100 g onion",
+      "50 g tomatoes",
+      "2 tsp cumin seeds",
+      "1 tsp turmeric powder",
+      "1 tsp red chili powder",
+      "Fresh coriander leaves",
+      "2 tbsp ghee",
+      "Garlic cloves",
+      "Salt to taste"
+    ],
+    "preparing_time": "35 min",
+    "calories": "250 calories"
+  },
+  {
+    "recipe_id": 7,
+    "recipe_name": "Chicken Tikka Masala",
+    "recipe_image": "https://images.unsplash.com/photo-1603133872878-684f208fb84b?w=400&h=300&fit=crop&q=80",
+    "short_description": "Tender chicken pieces in creamy tomato-based curry sauce",
+    "ingredients": [
+      "600 g chicken breast",
+      "300 ml tomato sauce",
+      "200 ml heavy cream",
+      "100 g onion",
+      "50 g ginger-garlic paste",
+      "2 tsp garam masala",
+      "1 tsp paprika",
+      "1 tsp cumin powder",
+      "Fresh cilantro",
+      "2 tbsp butter"
+    ],
+    "preparing_time": "40 min",
+    "calories": "420 calories"
+  },
+  {
+    "recipe_id": 8,
+    "recipe_name": "Paneer Butter Masala",
+    "recipe_image": "https://images.unsplash.com/photo-1571091718767-18b5b1457add?w=400&h=300&fit=crop&q=80",
+    "short_description": "Rich and creamy cottage cheese curry with butter and cream",
+    "ingredients": [
+      "400 g paneer cubes",
+      "300 ml tomato puree",
+      "200 ml heavy cream",
+      "100 g onion",
+      "50 g cashew paste",
+      "2 tsp butter",
+      "1 tsp garam masala",
+      "1 tsp kasuri methi",
+      "Fresh cream",
+      "Salt to taste"
+    ],
+    "preparing_time": "25 min",
+    "calories": "380 calories"
+  }
+]

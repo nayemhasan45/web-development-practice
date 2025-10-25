@@ -39,7 +39,6 @@ async function run() {
     app.post('/users',async (req,res)=>{
         const newUser = req.body;
         const result = await users.insertOne(newUser);
-        
         console.log('added to db :',result.insertedId)
         res.send(result);
     })

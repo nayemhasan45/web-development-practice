@@ -24,7 +24,7 @@ const CoffeDeatils = () => {
           <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-40">
 
             {/* Image Section */}
-            <div className="flex-shrink-0">
+            <div className="shrink-0">
               <img
                 src={photo}
                 alt={name}
