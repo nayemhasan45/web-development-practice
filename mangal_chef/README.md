@@ -27,39 +27,6 @@ A modern React application for managing recipes with a beautiful, responsive des
 - Node.js (v16 or higher)
 - npm or yarn
 
-### Installation
-
-1. Clone the repository
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
-
-3. Start the development server:
-   ```bash
-   npm run dev
-   ```
-
-4. Open your browser and navigate to `http://localhost:5173`
-
-## Project Structure
-
-```
-src/
-├── components/
-│   ├── Navbar.jsx          # Navigation bar with logo and menu
-│   ├── Banner.jsx           # Hero section with call-to-action
-│   ├── RecipeCard.jsx      # Individual recipe card component
-│   ├── Sidebar.jsx          # Cooking lists sidebar
-│   └── OurRecipes.jsx       # Recipes section wrapper
-├── context/
-│   └── RecipeContext.jsx    # State management for recipes
-├── data/
-│   └── recipes.json         # Recipe data
-├── App.jsx                  # Main application component
-├── main.jsx                 # Application entry point
-└── index.css                # Global styles and Tailwind imports
-```
 
 ## Usage
 
